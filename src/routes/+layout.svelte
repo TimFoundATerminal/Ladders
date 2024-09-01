@@ -1,4 +1,5 @@
-<script lang="ts">
+<script>
+	import '../app.css';
 	import { invalidate } from '$app/navigation';
 	import { onMount } from 'svelte';
 
@@ -17,9 +18,9 @@
 </script>
 
 <nav>
-    <a href="/">Home</a>
-    <a href="/about">About</a>
-    <a href="/login">Login</a>
+	<a href="/">Home</a>
+	<a href="/about">About</a>
+	<a href="/login">Login</a>
 </nav>
 
 <slot></slot>
