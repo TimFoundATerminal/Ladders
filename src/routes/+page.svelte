@@ -1,6 +1,12 @@
 <script lang="ts">
-    // TODO: figure out svelte routing
+    
+    export let data;
+
 </script>
+
+<h1>Welcome to Ladders</h1>
+
+<!-- {@debug data} -->
 
 
 

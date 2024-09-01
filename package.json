@@ -10,7 +10,8 @@
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --check . && eslint .",
 		"format": "prettier --write .",
-		"db:generate": "drizzle-kit generate"
+		"db:generate": "drizzle-kit generate --config=supabase/drizzle.config.ts",
+		"db:drop": "drizzle-kit drop --config=supabase/drizzle.config.ts"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^3.0.0",
@@ -32,6 +33,8 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@supabase/ssr": "^0.5.1",
+		"@supabase/supabase-js": "^2.45.3",
 		"drizzle-orm": "^0.33.0",
 		"postgres": "^3.4.4"
 	}
