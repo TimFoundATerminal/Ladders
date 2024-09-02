@@ -221,7 +221,7 @@ inspector_port = 8083
 enabled = true
 client_id = "env(GITHUB_CLIENT_ID)"
 secret = "env(GITHUB_CLIENT_SECRET)"
-redirect_uri = "http://localhost:5173/auth/v1/callback"
+redirect_uri = "http://127.0.0.1:54321/auth/v1/callback"
 
 [analytics]
 enabled = true
