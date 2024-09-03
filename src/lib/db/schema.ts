@@ -8,9 +8,10 @@ export const playerRole = pgEnum('playerRole', ['PLAYER', 'MOD', 'DEV', 'ADMIN']
 export const playersTable = pgTable('players', {
     id: uuid('id').primaryKey(),
     email: text('email').notNull().unique(),
-    firtname: text('firstname').notNull(),
+    firstname: text('firstname').notNull(),
     lastname: text('lastname').notNull(),
     gender: text('gender').notNull(),
+    dob: timestamp('dob').notNull(),
     england_squash_id: text('england_squash_id').unique(),
     squash_levels_id: text('squash_levels_id').unique(),
     role: playerRole('playerRole').notNull().default('PLAYER'),

@@ -6,7 +6,7 @@
 
 <h1>Welcome to Ladders</h1>
 
-<!-- {@debug data} -->
+
 
 
 
